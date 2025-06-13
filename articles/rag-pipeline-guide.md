@@ -1,10 +1,3 @@
----
-title: "RAG Pipeline Guide - From Load to LLM"
-description: "A beginner-friendly walkthrough of the Retrieval-Augmented Generation architecture using LangChain, FAISS, and OpenAI/Gemini."
-date: 2025-06-12
-tags: [RAG, LangChain, LLM, Vector DB, OpenAI, Gemini]
----
-
 # 🧠 RAG Pipeline Guide – From Load to LLM
 
 Welcome to this comprehensive, beginner-friendly guide on **Retrieval-Augmented Generation (RAG)**. This guide breaks down the complete RAG architecture in a clear, easy-to-follow sequence — from ingesting documents to generating intelligent responses with Large Language Models (LLMs).
@@ -20,33 +13,33 @@ Welcome to this comprehensive, beginner-friendly guide on **Retrieval-Augmented 
 ## 🧭 The Big Picture – Step-by-Step RAG Workflow
 
 ```
-             ┌──────────────┐
-             │ Your Raw Data│ (PDFs, CSVs, Text, etc.)
-             └──────┬───────┘
-                    ▼
-          ┌────────────────────┐
-          │ Document Loaders   │ → Converts data into LangChain docs
-          └──────┬─────────────┘
-                 ▼
-      ┌─────────────────────────────┐
-      │ Text Splitters              │ → Breaks data into manageable chunks
-      └──────┬──────────────────────┘
-             ▼
-   ┌─────────────────────────────┐
-   │ Embedding Models            │ → Converts text chunks into numerical vectors
-   └──────┬──────────────────────┘
-          ▼
-     ┌────────────────────┐
-     │ Vector Database     │ → Stores embeddings for fast retrieval
-     └──────┬──────────────┘
-            ▼
-    ┌──────────────────────┐
-    │ Similarity Search     │ → Finds relevant chunks for a user’s question
-    └──────┬────────────────┘
-           ▼
-   ┌───────────────────────┐
-   │ LLM (OpenAI, Gemini)   │ → Generates final answer using retrieved context
-   └───────────────────────┘
+┌────────────────┐
+│ Your Raw Data  │ (PDFs, CSVs, Text, etc.)
+└──────┬─────────┘
+       ▼
+┌────────────────────┐
+│ Document Loaders   │ → Converts data into LangChain docs
+└──────┬─────────────┘
+       ▼
+┌────────────────────┐
+│ Text Splitters     │ → Breaks data into manageable chunks
+└──────┬─────────────┘
+       ▼
+┌────────────────────┐
+│ Embedding Models   │ → Converts text chunks into numerical vectors
+└──────┬─────────────┘
+       ▼
+┌────────────────────┐
+│ Vector Database    │ → Stores embeddings for fast retrieval
+└──────┬─────────────┘
+       ▼
+┌────────────────────┐
+│ Similarity Search  │ → Finds relevant chunks for a user’s question
+└──────┬─────────────┘
+       ▼
+┌───────────────────────┐
+│ LLM (OpenAI, Gemini)  │ → Generates final answer using retrieved context
+└───────────────────────┘
 ```
 
 ---
