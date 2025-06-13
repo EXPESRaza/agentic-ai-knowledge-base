@@ -28,8 +28,8 @@ This knowledge base is for:
 ## 📝 Articles in Progress
 
 - [x] [AI Agent Flavors](./articles/ai-agent-flavors.md)
+- [x] [RAG Pipeline Guide - From Load to LLM](./articles/rag-pipeline-guide.md)
 - [x] LangGraph vs LangChain Agents
-- [ ] Planning vs Reactivity
 - [ ] Evaluating Agent Performance
 - [ ] Memory Integration Techniques
 - [ ] Building Multi-Agent Systems
