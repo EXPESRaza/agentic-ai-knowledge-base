@@ -29,6 +29,9 @@ This knowledge base is for:
 
 - [x] [AI Agent Flavors](./articles/ai-agent-flavors.md)
 - [x] [RAG Pipeline Guide - From Load to LLM](./articles/rag-pipeline-guide.md)
+- [x] [Lessons Learned from Using LangGraph](./articles/langgraph-first-insight.md)
+- [x] [From Prompting to LangGraph](./articles/from-prompting-to-langgraph.md)
+- [x] [AI Workflow Design Approches](./articles/ai-workflow-design-approaches.md)
 - [x] LangGraph vs LangChain Agents
 - [ ] Evaluating Agent Performance
 - [ ] Memory Integration Techniques
