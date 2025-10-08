@@ -125,7 +125,7 @@ Hello! How can I assist you today?
 
 ---
 
-## 🧬 Example 3 — From Deterministic to Agentic F
+## 🧬 Example 3 — From Deterministic to Agentic Flow
 
 Let’s take it a step further:
 The model now **decides dynamically** how to respond and stores **conversation memory**.
